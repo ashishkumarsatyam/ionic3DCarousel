@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ionic 3D Card Carousel Example
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-fab top right edge>
+        <button ion-fab mini (click)="getCurrentSlides()" color="danger"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+    <carousel [slides]="slides" [autoloop]="true" (selectSlide)="selectItem($event);"></carousel>
+</ion-content>
